@@ -78,6 +78,7 @@ Install python3-venv and create a virtual environment for Airflow:
 
 ```
 sudo apt-get install python3-venv
+mkdir venvs
 python3 -m venv ~/airflow_project/venvs/airflow_venv
 ```
 
