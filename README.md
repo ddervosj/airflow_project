@@ -38,9 +38,9 @@ sudo -u postgres psql
 Then, execute the following SQL commands:
 
 ```
-CREATE USER SET_YOUR_USERNAME PASSWORD 'SET_YOUR_PASSWORD';
+CREATE USER YOUR_USERNAME PASSWORD 'YOUR_PASSWORD';
 CREATE DATABASE airflow;
-GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow;
+GRANT ALL PRIVILEGES ON DATABASE airflow TO YOUR_USERNAME;
 \q
 ```
 
@@ -94,7 +94,7 @@ Upgrade pip and setuptools, then install Apache Airflow and its dependencies:
 
 ```
 pip install --upgrade pip setuptools
-pip install apache-airflow apache-airflow-providers-docker psycopg2
+pip install apache-airflow apache-airflow-providers-docker psycopg2-binary
 ```
 
 ## Step 6: Set the Environment Variables
