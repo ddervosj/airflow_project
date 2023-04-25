@@ -163,7 +163,7 @@ sudo visudo
 Add the following line at the end of the file:
 
 ```
-your_username ALL=(ALL) NOPASSWD: /usr/sbin/service postgresql start
+your_wsl_username ALL=(ALL) NOPASSWD: /usr/sbin/service postgresql start
 ```
 
 Make startup.sh script executable:
